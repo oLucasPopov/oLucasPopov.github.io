@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1024, initial-scale=1.0">
+    <title>oLucasPopov github page</title>
+    <link rel="stylesheet" href="./vendor/milligram.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="presentation">
+        <h1 class="hello" id="hello"></h1>
+        <h1 class="name" id="name"></h1>
+
+        <div class="network-links">
+            <a href="https://github.com/oLucasPopov" target="_blank">
+                <img src="./assets/github.png" alt="github" title="Conheça meu github">
+            </a>
+
+            <a href="https://linkedin.com/in/lucaspopov" target="_blank">
+                <img src="./assets/linkedin.png" alt="linkedin" title="Conheça meu Linkedin">
+            </a>
+        </div>
+    </div>
+    <script>
+        const presentation = ['Olá!', 'Meu nome é Lucas Popov!']
+
+
+        var i = 0;
+        var j = 0;
+        const speed = 100;
+
+        function typeWriter() {
+            if (i < presentation[0].length) {
+                document.getElementById("hello").innerHTML += presentation[0].charAt(i);
+                i++;
+                setTimeout(typeWriter, speed);
+            }
+
+            if ((i == presentation[0].length) && (j < presentation[1].length)) {
+                document.getElementById("name").innerHTML += presentation[1].charAt(j);
+                j++;
+                setTimeout(typeWriter, speed);
+            }
+
+        }
+        typeWriter()
+    </script>
+</body>
+
+</html>
