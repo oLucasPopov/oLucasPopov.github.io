@@ -6,6 +6,7 @@ html, body {
     font-family: 'Roboto', sans-serif;
     color:rgba(96, 28, 171, 1);
     background-color: rgba(27, 27, 31, 1);
+    user-select: none;
 }
 
 .presentation .hello {
@@ -15,7 +16,6 @@ html, body {
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 4.5vw;
-    /* text-transform: uppercase; */
 }
 .presentation .name {
     margin: 0;
@@ -24,7 +24,6 @@ html, body {
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 4.5vw;
-    /* text-transform: uppercase; */
 }
 .presentation .network-links {
     position: absolute;
@@ -47,8 +46,7 @@ html, body {
         top: 36%;
         left: 50%;
         transform: translate(-50%, -50%);
-        font-size: 2vw;
-        /* text-transform: uppercase; */
+        font-size: 4vw;
     }
     .presentation .name {
         margin: 0;
@@ -56,8 +54,7 @@ html, body {
         top: 45%;
         left: 50%;
         transform: translate(-50%, -50%);
-        font-size: 2vw;
-        /* text-transform: uppercase; */
+        font-size: 4vw;
     }
     
     .presentation .network-links {
